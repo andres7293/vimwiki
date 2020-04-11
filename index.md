@@ -21,6 +21,7 @@
 * [[Mi sistema]]
 * [[xilinx]]
 * [dotfiles github](https://github.com/andres7293/dotfiles)
+* [dotfiles gitlab](https://gitlab.com/andres7293/dotfiles)
 
 ## Recursos
 
@@ -29,9 +30,3 @@
 # Otros
 
 [[Proyectos personales]]
-
-
-## Todo
-
-1. Crear una entrada en la wiki donde esté toda la configuración de mi sistema: fuentes, paquetes, temas, dotfiles, scripts, etc
-2. Pasar los ficheros md de boostnote a vimiki
