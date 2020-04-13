@@ -6,6 +6,13 @@
 * [An Incremental Approach to Vim - Chris Toomey](https://ctoomey.com/writing/an-incremental-approach-to-vim/)
 * [Vim Novice Videos - Flarfnoogins](http://derekwyatt.org/vim/tutorials/novice/#Basic_Movement_1)
 
+# Herramientas
+
+* [https://www.shellcheck.net/](https://www.shellcheck.net/)
+* [https://devhints.io/](https://devhints.io/)
+* [https://explainshell.com/](https://explainshell.com/)
+* [google shell guide](https://google.github.io/styleguide/shellguide.html)
+
 
 ## http
 
@@ -25,5 +32,3 @@
 * [freecodecamp](https://www.freecodecamp.org/)
 * [Intro to Computer Science | Udacity](https://eu.udacity.com/course/intro-to-computer-science--cs101)
 * [CS50: Introduction to Computer Science | edX](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x)
-
-Parece que pluralsight es un poco más profesional, aunque es más caro. Está orientado a entrenar a equipos en entornos empresariales.
