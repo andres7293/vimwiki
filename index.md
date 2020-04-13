@@ -21,6 +21,8 @@
 
 * [[Mi sistema]]
 * [[xilinx]]
+* [dotfiles github](https://github.com/andres7293/dotfiles)
+* [dotfiles gitlab](https://gitlab.com/andres7293/dotfiles)
 
 ## Recursos
 
