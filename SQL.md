@@ -38,3 +38,5 @@ Common constraints:
 * Foreign key
 * NOT NULL
 * UNIQUE
+
+### Create tables
