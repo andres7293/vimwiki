@@ -4,6 +4,7 @@
 
 * [SQL](SQL)
 * [[wikijs]]
+* [[docker]]
 
 ## Guías instalación/compilación
 
@@ -28,9 +29,3 @@
 # Otros
 
 [[Proyectos personales]]
-
-
-## Todo
-
-1. Crear una entrada en la wiki donde esté toda la configuración de mi sistema: fuentes, paquetes, temas, dotfiles, scripts, etc
-2. Pasar los ficheros md de boostnote a vimiki
