@@ -12,7 +12,10 @@
 * [https://devhints.io/](https://devhints.io/)
 * [https://explainshell.com/](https://explainshell.com/)
 * [google shell guide](https://google.github.io/styleguide/shellguide.html)
-
+* [Terminals are sexy](https://github.com/k4m4/terminals-are-sexy)
+* [Awesome dev env](https://github.com/jondot/awesome-devenv)
+* [awesome sysadmin](https://github.com/kahun/awesome-sysadmin)
+* apt install moreutils --> vidir: renombra archivos con vim
 
 ## http
 
