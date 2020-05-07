@@ -5,6 +5,8 @@
 * [SQL](SQL)
 * [[wikijs]]
 * [[docker]]
+* [[opencv]]
+* [[vagrant]]
 
 ## Guías instalación/compilación
 
