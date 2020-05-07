@@ -1,12 +1,11 @@
 # Wiki
 
-## Dev
-
 * [SQL](SQL)
-* [[wikijs]]
 * [[docker]]
 * [[opencv]]
 * [[vagrant]]
+* [[nginx]]
+* [[ssh]]
 
 ## Guías instalación/compilación
 
@@ -21,14 +20,14 @@
 
 ## Configuración
 
-* [[Mi sistema]]
+* [[Herramientas]]
 * [[xilinx]]
 * [dotfiles github](https://github.com/andres7293/dotfiles)
 * [dotfiles gitlab](https://gitlab.com/andres7293/dotfiles)
 
-## Recursos
+## Enlaces
 
-* [[Recursos]]
+* [[Enlaces]]
 
 # Otros
 
