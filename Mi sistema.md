@@ -1,4 +1,4 @@
-# Mi sistema
+[#](#) Mi sistema
 
 Personalización de mi sistema
 
@@ -29,6 +29,7 @@ Personalización de mi sistema
 
 * bash
 * zsh con ohmyzsh
+* ranger
 
 ## Entornos de escritorio 
 

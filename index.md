@@ -2,6 +2,8 @@
 
 * [SQL](SQL)
 * [[docker]]
+* [[opencv]]
+* [[vagrant]]
 * [[nginx]]
 * [[ssh]]
 
