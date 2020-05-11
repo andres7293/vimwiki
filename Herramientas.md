@@ -7,6 +7,18 @@
 * [neovim](https://neovim.io/)
 * [vscode](https://code.visualstudio.com/)
 
+## Extensiones vscode
+
+* vim (vscode vim)
+* gitlens
+* Prettier
+* yaml (redhat)
+* editorconfig
+* polacode (code screenshot)
+* indent rainbow
+* live server
+* svg
+
 ### Dev
 
 * [Postman](https://www.postman.com/)
