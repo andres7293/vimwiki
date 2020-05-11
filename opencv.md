@@ -45,6 +45,20 @@ make -j4
 make install
 ```
 
+### compilar opencv soporte para python
+
+[doc python opencv](https://docs.opencv.org/4.3.0/d2/de6/tutorial_py_setup_in_ubuntu.html)
+
+Paquetes previos
+
+```bash
+sudo apt-get install cmake g++ gcc make
+```
+
+python3 support
+```bash
+```
+
 ### Compilación cruzada
 
 [cmake cross compile](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html#cross-compiling-for-linux)
