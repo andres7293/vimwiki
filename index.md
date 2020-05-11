@@ -5,6 +5,9 @@
 * [[nginx]]
 * [[ssh]]
 
+## Lenguajes y frameworks
+* [[jQuery]]
+
 ## Guías instalación/compilación
 
 * [[openocd]]

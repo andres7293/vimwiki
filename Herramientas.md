@@ -17,6 +17,7 @@
 * [bitwise](https://github.com/mellowcandle/bitwise)
 * [ngrok](https://ngrok.com/)
 * [wikijs](https://timewarrior.net/)
+* [json placeholder](https://jsonplaceholder.typicode.com/)
 
 ### Otros
 
