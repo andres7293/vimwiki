@@ -31,15 +31,26 @@ make install
 ### opencv_contrib
 
 **Es necesario recompilar todo opencv para añadir opencv_contrib**
+```bash
+rm -rf opencv-4.3.0/build
+```
 
 ```bash
 git clone --depth=1 https://github.com/opencv/opencv_contrib
 # La ruta extra_modules es la carpeta modules del repo opencv_contrib
--DCMAKE_INSTALL_PREFIX=/opt/opencv \
--DOPENCV_EXTRA_MODULES_PATH=/media/andres/5EEC0A85EC0A5823/opencv/opencv_contrib/modules \
+cd opencv-4.3.0
+mkdir build
+cmake \
+-DCMAKE_TOOLCHAIN_FILE=../trd4-opencv.cmake \
+-DCMAKE_BUILD_TYPE=Release \
 -DBUILD_opencv_legacy=OFF \
 -DBUILD_EXAMPLES=OFF \
 -DBUILD_TESTS=OFF \
+-DBUILD_opencv_java=OFF \
+-DBUILD_opencv_python=OFF \
+-DCMAKE_INSTALL_PREFIX=/opt/rpi/sysroot \
+-DWITH_FFMPEG=OFF
+-DOPENCV_EXTRA_MODULES_PATH=/opt/rpi/src/opencv_contrib/modules/ \
 ..
 make -j4
 make install
@@ -55,8 +66,37 @@ Paquetes previos
 sudo apt-get install cmake g++ gcc make
 ```
 
-python3 support
+dependencias
 ```bash
+sudo apt-get install python3-dev python3-numpy
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev
+#optional
+sudo apt-get install libpng-dev
+sudo apt-get install libjpeg-dev
+sudo apt-get install libopenexr-dev
+sudo apt-get install libtiff-dev
+sudo apt-get install libwebp-dev
+```
+
+Compilar opencv
+```bash
+git clone --depth=1 https://github.com/opencv/opencv.git
+cd opencv
+mkdir build
+cd build
+cmake \
+-DBUILD_EXAMPLES=OFF \
+-DBUILD_TESTS=OFF \
+..
+make -j3
+make install
+```
+
+Probar compilación desde python:
+```bash
+import cv2 as cv
+print(cv.__version__)
 ```
 
 ### Compilación cruzada
@@ -164,24 +204,43 @@ make install
 
 ## Compilar código usando opencv
 
+[CMakeLists.txt](https://docs.opencv.org/4.3.0/db/df5/tutorial_linux_gcc_cmake.html)
+
 Para compilar es necesario la variable de entorno *OpenCV_DIR* apunte al directorio donde se encuentra el fichero *OpenCVConfig.cmake*
-En mi caso se encuentra en la ruta siguiente:
 
+Se puede especificar de dos formas:
 ```bash
-export OpenCV_DIR=/media/andres/5EEC0A85EC0A5823/opencv/opencv-4.3.0/build/
+#1. Añadir a CMakeLists.txt
+set("OPENCV_DIR", "<ruta al directorio de OpenCVConfig.cmake>")
+#2. Por variables de entorno
+export OpenCV_DIR=<ruta al directorio de OpenCVConfig.cmake>
+
+#Luego hacer
+cmake . && make
 ```
 
-También se puede añadir a CMakeList.txt, la ruta de instalación de opencv:
+### Compilar código usando opencv de forma cruzada.
+
+Aplican las mismas reglas que las vista anteriormente:
+
+1. Especificar la ruta de instalación de opencv.
+2. Indicar la ruta del toolchain file (Donde se especifica la ruta nuestro compilador, sysroot, etc)
+3. Navegar hasta el directorio donde se encuentre CMakeLists.txt
+
 
 ```bash
-set("OPENCV_DIR", "/media/second_drive/projects/mhp/opencv_install")
-```
-
-Luego hacer:
-```bash
-cmake .
+export OpenCV_DIR=<ruta al directorio de OpenCVConfig.cmake>
+cmake -DCMAKE_TOOLCHAIN_FILE=../trd4-opencv.cmake .
 make
 ```
+
+Nota:
+Si se está compilando de forma cruzada y nativa, es mejor borrar la caché de cmake para evitar errores.
+
+```bash
+rm -rf CMakeCache.txt CMakeFiles cmake_install.cmake
+```
+
 
 ## entorno.sh
 
