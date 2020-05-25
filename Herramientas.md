@@ -30,6 +30,7 @@
 * [ngrok](https://ngrok.com/)
 * [wikijs](https://timewarrior.net/)
 * [json placeholder](https://jsonplaceholder.typicode.com/)
+* [zeal](https://zealdocs.org/)
 
 ### Otros
 
