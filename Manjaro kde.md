@@ -25,3 +25,27 @@ pacman -S virtualbox
 #instalar la versión de virtualbox que coincida con la version del kernel
 sudo vboxreload
 ```
+
+## lenovo ideapad330
+
+El wifi no funciona en este pc. Falta el driver de la tarjeta de wifi para que se pueda reconocer la interfaz de red inalambrica
+
+### AUR
+
+```bash
+uname -r
+# la version del kernel que tengo en el momento de escribir: 5.6.15-1-MANJARO
+# entonces hay que instalar la version 56 de las cabeceras del kernel
+pacman -S linux56-headers
+pamac build rtl8821ce-dkms-git
+```
+
+### desde las fuentes
+
+```bash
+pacman -S linux56-headers
+git clone https://github.com/tomaspinho/rtl8821ce
+cd rtl8821ce
+make
+make install
+```

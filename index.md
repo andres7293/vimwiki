@@ -20,6 +20,7 @@
 * [[toolchain nordic]]
 * [[Manjaro kde]]
 * [[arch linux]]
+* [wireguard](wireguard)
 
 ## Configuración
 

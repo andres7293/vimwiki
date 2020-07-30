@@ -14,6 +14,12 @@ Docker has two options for containers to store files in the host machine, so tha
 
 [manage data docker](https://docs.docker.com/storage/)
 
+## Post install
+
+https://docs.docker.com/engine/install/linux-postinstall/
+
+sudo usermod -aG docker $USER
+
 ## Network
 
 [docker network](https://docs.docker.com/network/)
@@ -31,6 +37,23 @@ RUN apt-get update -y && apt-get -y install curl
 ```
 
 [docker builder](https://docs.docker.com/engine/reference/builder/)
+
+
+Differences between RUN,CMD and ENTRYPOINT
+
+### RUN
+
+Executes commands in a new layer and creates new image. E.g., it is often 
+used for installing new softwar (apt, npm, etc).
+
+### CMD
+
+Sets default command and/or parameters, which can be overwritten from command line when
+docker container runs.
+
+#### ENTRYPOINT
+
+configures a container that will run as an executable
 
 ## Docker Compose
 
