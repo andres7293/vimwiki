@@ -8,6 +8,17 @@
 * [[nginx]]
 * [[ssh]]
 
+## Tareas pendientes
+
+* Entender ssl/tls
+* Estudiar y hacer codigo con sockets de unix (cliente, servidor)
+* Certbot.
+* Nginx con ssl en localhost
+* Estudiar usar droplet de digitalocean.
+* http con autenticacion
+* estudiar protocolo http
+* Levantar wikijs 
+
 ## Lenguajes y frameworks
 * [[jQuery]]
 
